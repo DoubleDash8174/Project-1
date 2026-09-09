@@ -13,8 +13,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Project-1
-        uses: actions/Project-1
+      - name: checkout_repository
+        uses: actions/checkout@v4
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v1
