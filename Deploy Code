@@ -16,10 +16,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Upload site artifact
+      - name: !!!!!!!
         uses: actions/upload-pages-artifact@v1
         with:
-          path: './'    # publish the repository root (change to ./docs or ./dist if needed)
+          path: './https://doubledash8174.github.io/Project-1/'    # publish the repository root (change to ./docs or ./dist if needed)
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
