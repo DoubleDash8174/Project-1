@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings | Campbell's Bakehouse</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="site-title">Settings</h1>
+    <a class="button header-button" href="index.html">Home</a>
+  </header>
+
+  <main>
+    <h2 class="page-heading">Customise Your Website</h2>
+
+    <section class="settings-panel">
+      <div class="setting">
+        <label for="fontSize">
+          Font size: <output id="fontSizeValue">16</output> px
+        </label>
+        <input
+          type="range"
+          id="fontSize"
+          min="12"
+          max="52"
+          value="16"
+          step="1"
+        >
+        <div class="range-labels">
+          <span>12 px</span>
+          <span>52 px</span>
+        </div>
+      </div>
+
+      <div class="setting">
+        <label for="backgroundColor">Background colour</label>
+        <div class="colour-control">
+          <input type="color" id="backgroundColor" value="#746656">
+          <output id="backgroundValue">#746656</output>
+        </div>
+      </div>
+
+      <div class="setting">
+        <label for="fontColor">Font colour</label>
+        <div class="colour-control">
+          <input type="color" id="fontColor" value="#ffffff">
+          <output id="fontValue">#ffffff</output>
+        </div>
+      </div>
+
+      <p id="settingsStatus" role="status" aria-live="polite">
+        Your settings are saved automatically.
+      </p>
+
+      <button type="button" class="button reset-button" id="resetSettings">
+        Reset Defaults
+      </button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Campbell's Bakehouse | Cooloola Cove QLD</p>
+  </footer>
+</body>
+</html>
